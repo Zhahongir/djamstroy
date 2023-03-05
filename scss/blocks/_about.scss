@@ -1,0 +1,71 @@
+.about {
+    padding-top: 100px;
+    position: relative;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &__title {
+            @include title;
+        }
+        &__content {
+            width: 950px;
+            position: relative;
+            &__title {
+                font-size: 24px;
+                font-weight: 500;
+                color: #fff;
+            }
+            &__info {
+                margin-top: 25px;
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                &__text {
+                    width: 450px;
+                    font-size: 16px;
+                    color: #fff;
+                    color: #E0E0E0;
+                }
+            }
+            &__facts {
+                margin-top: 50px;
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                &__item {
+                    text-align: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    &:nth-child(1) {
+                        border-left: 1px solid #828282;
+                        width: 320px;
+                    }
+                    &:nth-child(2) {
+                        border-right: 1px solid #828282;
+                        border-left: 1px solid #828282;
+                        width: 320px;
+                    }
+                    &:nth-child(3) {
+                        border-right: 1px solid #828282;
+                        width: 314px;
+                    }
+                    &__numbers {
+                        font-size: 70px;
+                        color: #E0E0E0;
+                        span {
+                            @include orange;
+                        }
+                    }
+                    &__description {
+                        font-size: 16px;
+                        color: #E0E0E0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

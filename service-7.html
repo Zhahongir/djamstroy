@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Джамстрой</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="/" class="header__wrap__logo"></a>
+                <div class="header__wrap__content">
+                    <ul class="header__wrap__content__nav">
+                        <li class="header__wrap__content__nav__item"><a href="index.html#aboutus" class="header__wrap__content__nav__item__link">О компании</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#services" class="header__wrap__content__nav__item__link">Услуги</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#repairs" class="header__wrap__content__nav__item__link">Виды ремонта</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#stages" class="header__wrap__content__nav__item__link">Этапы работ</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#works" class="header__wrap__content__nav__item__link">Наши работы</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#reviews" class="header__wrap__content__nav__item__link">Отзывы</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#contacts" class="header__wrap__content__nav__item__link">Контакты</a></li>
+                    </ul>
+                    <a href="tel:+79531574444" class="header__wrap__content__phone">
+                        <img src="icons/call.svg" alt="phone" class="header__wrap__content__phone__icon">
+                    </a>
+                    <div class="header__wrap__content__callback booking">Обратная связь</div>
+                    <div class="header__wrap__content__hamburger">
+                        <span class="header__wrap__content__hamburger__span"></span>
+                        <span class="header__wrap__content__hamburger__span"></span>
+                        <span class="header__wrap__content__hamburger__span"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro__wrap">
+                <img src="images/service-promo-7.webp" alt="image" class="intro__wrap__photo">
+                <div class="intro__wrap__content">
+                    <h1 class="intro__wrap__content__title">Комплексный ремонт офисных помещений под&nbsp;ключ</h1>
+                    <p class="intro__wrap__content__description">Офис — практически второй дом для сотрудников и дирекции, ведь стандартный рабочий день составляет восемь часов, а это третья часть суток! И, конечно, хочется, чтобы окружающее пространство было комфортным, способствовало увеличению продуктивности. А для этого интерьер необходимо периодически корректировать в соответствии с изменениями, происходящими в компании, да и просто хочется модернизировать дизайн.</p>
+                    <p class="intro__wrap__content__description">Наши мастера осуществляют полный цикл ремонтных работ, от создания уникального дизайн-проекта с подбором материалов до финишной отделки. Ремонт под ключ — это отличное решение, которое позволяет распланировать и сэкономить время, выдержать весь дизайн в едином стиле и проконтролировать работы на всех этапах.</p>
+                    <div class="intro__wrap__content__info">
+                        <p class="intro__wrap__content__info__item">Средняя стоимость ремонта: <br class="intro__info-br"><span>индивидуальна</span></p>
+                        <p class="intro__wrap__content__info__item">Примерные сроки работ: <br class="intro__info-br"><span>индивидуально</span></p>
+                    </div>
+                    <div class="intro__wrap__content__callback">
+                        <button class="intro__wrap__content__callback__btn booking">Оставить заявку</button>
+                        <p class="intro__wrap__content__callback__note">Для точной оценки предстоящего ремонта вы можете вызвать мастера для составления подробной сметы <span>(бесплатно)</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="table">
+        <div class="container">
+            <h2 class="table__title title"><span>Стоимость</span> ремонта и отделки в&nbsp;офисе</h2>
+            <div class="table__wrap">
+                <div class="tab__wrap tabcontainer">
+                    <div class="tabheader">
+                        <div class="tabheader__items">
+                            <div class="tabheader__item tabheader__item_active">Демонтаж помещения</div>
+                            <div class="tabheader__item">Ремонт, окраска потолка</div>
+                            <div class="tabheader__item">Ремонт стен, поклейка обоев</div>
+                            <div class="tabheader__item">Ремонт и укладка напольных покрытий</div>
+                            <div class="tabheader__item">Установка электрики при капитальном ремонте</div>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent hide show fade">
+                        <div class="tabcontent__inner">
+                            <div class="tabcontent__inner__header">
+                                <div class="tabcontent__inner__header__name">Наименование работ</div>
+                                <div class="tabcontent__inner__header__info">
+                                    <div class="tabcontent__inner__header__info__unit">Ед. изм.</div>
+                                    <div class="tabcontent__inner__header__info__price">Цена</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Очистка потолка от мела, краски</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">290 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Демонтаж осветительных приборов</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">шт</div>
+                                    <div class="tabcontent__inner__item__info__price">80 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Демонтаж потолков из ГКЛ</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">205 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Демонтаж реечных потолков</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">210 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Демонтаж стен</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">400 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent hide">
+                        <div class="tabcontent__inner">
+                            <div class="tabcontent__inner__header">
+                                <div class="tabcontent__inner__header__name">Наименование работ</div>
+                                <div class="tabcontent__inner__header__info">
+                                    <div class="tabcontent__inner__header__info__unit">Ед. изм.</div>
+                                    <div class="tabcontent__inner__header__info__price">Цена</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка реечных потолков</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">600 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка однослойных потолков из ГКЛ</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">800 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Двуслойные</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">1200 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка двухуровневых потолков из ГКЛ</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">1600 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка короба по периметру</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м.п.</div>
+                                    <div class="tabcontent__inner__item__info__price">500 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка галтелей</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м.п.</div>
+                                    <div class="tabcontent__inner__item__info__price">270 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Штукатурка под правило</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">300 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Сетка</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">100 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка маячков</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">100 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Штукатурка по маякам</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">450 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Шпаклевка потолка</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">380 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Шлифовка</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">120 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Грунтовка (каждый цикл)</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">70 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Окраска потолка в 2-3 слоя</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">350 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Поклейка потолочных обоев</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">200 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent hide">
+                        <div class="tabcontent__inner">
+                            <div class="tabcontent__inner__header">
+                                <div class="tabcontent__inner__header__name">Наименование работ</div>
+                                <div class="tabcontent__inner__header__info">
+                                    <div class="tabcontent__inner__header__info__unit">Ед. изм.</div>
+                                    <div class="tabcontent__inner__header__info__price">Цена</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Монтаж перегородок из ГКЛ</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">950 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Штукатурка под правило</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">320 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Сетка</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">100 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка маячков</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">100 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Штукатурка по маякам</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">450 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Шпаклевка</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">350 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Шлифовка</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">140 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Грунтовка (каждый цикл)</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">70 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Окраска стен в 2 слоя</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">390 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Поклейка обоев</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">350 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent hide">
+                        <div class="tabcontent__inner">
+                            <div class="tabcontent__inner__header">
+                                <div class="tabcontent__inner__header__name">Наименование работ</div>
+                                <div class="tabcontent__inner__header__info">
+                                    <div class="tabcontent__inner__header__info__unit">Ед. изм.</div>
+                                    <div class="tabcontent__inner__header__info__price">Цена</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Демонтаж линолеума/ковролина</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">130 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Самовыравнивающая смесь</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">450 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Грунтовка</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">70 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Монтаж линолеума/ковролина</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">295 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Сварка шва</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">210 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Настил подложки</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">60 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Укладка ламината</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">250 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Паркетной доски</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">490 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Плинтус</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м²</div>
+                                    <div class="tabcontent__inner__item__info__price">170 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent hide">
+                        <div class="tabcontent__inner">
+                            <div class="tabcontent__inner__header">
+                                <div class="tabcontent__inner__header__name">Наименование работ</div>
+                                <div class="tabcontent__inner__header__info">
+                                    <div class="tabcontent__inner__header__info__unit">Ед. изм.</div>
+                                    <div class="tabcontent__inner__header__info__price">Цена</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка розеток</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">шт</div>
+                                    <div class="tabcontent__inner__item__info__price">500 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка распаечной коробки</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">шт</div>
+                                    <div class="tabcontent__inner__item__info__price">590 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка точечных светильников</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">шт</div>
+                                    <div class="tabcontent__inner__item__info__price">390 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка подрозетников, распаечных коробок в фальш-стенах</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">шт</div>
+                                    <div class="tabcontent__inner__item__info__price">120 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка светильников на потолке "Амстронг"</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">шт</div>
+                                    <div class="tabcontent__inner__item__info__price">650 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Установка светильников на стенах</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">шт</div>
+                                    <div class="tabcontent__inner__item__info__price">300 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Укладка силового провода без штробы в гофрорукаве</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">190 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Укладка силового провода без штробы без гофрорукава</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">90 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Укладка ТV кабеля в гофрорукаве</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м</div>
+                                    <div class="tabcontent__inner__item__info__price">160 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Укладка тел. кабеля в гофрорукаве</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit">м</div>
+                                    <div class="tabcontent__inner__item__info__price">60 ₽</div>
+                                </div>
+                            </div>
+                            <div class="tabcontent__inner__item">
+                                <div class="tabcontent__inner__item__title">Прокладка винипластовых труб (лотков до 100 мм)</div>
+                                <div class="tabcontent__inner__item__info">
+                                    <div class="tabcontent__inner__item__info__unit"></div>
+                                    <div class="tabcontent__inner__item__info__price">275 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="table__callback booking">
+                <button class="table__callback__btn">Оставить заявку</button>
+                <p class="table__callback__note">Для точной оценки предстоящего ремонта вы можете вызвать мастера для составления подробной сметы <span>(бесплатно)</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__wrap__nav">
+                    <a href="/" class="footer__wrap__nav__logo"></a>
+                    <ul class="footer__wrap__nav__list-first">
+                        <li class="footer__wrap__nav__list-first__item"><a href="index.html#aboutus" class="footer__wrap__nav__list-first__item__link">О компании</a></li>
+                        <li class="footer__wrap__nav__list-first__item"><a href="index.html#advantages" class="footer__wrap__nav__list-first__item__link">Преимущества</a></li>
+                        <li class="footer__wrap__nav__list-first__item"><a href="index.html#services" class="footer__wrap__nav__list-first__item__link">Услуги</a></li>
+                        <li class="footer__wrap__nav__list-first__item"><a href="index.html#repairs" class="footer__wrap__nav__list-first__item__link">Виды работ</a></li>
+                    </ul>
+                    <ul class="footer__wrap__nav__list">
+                        <li class="footer__wrap__nav__list__item"><a href="index.html#stages" class="footer__wrap__nav__list__item__link">Этапы работ</a></li>
+                        <li class="footer__wrap__nav__list__item"><a href="index.html#works" class="footer__wrap__nav__list__item__link">Наши работы</a></li>
+                        <li class="footer__wrap__nav__list__item"><a href="index.html#reviews" class="footer__wrap__nav__list__item__link">Отзывы</a></li>
+                        <li class="footer__wrap__nav__list__item"><a href="index.html#contacts" class="footer__wrap__nav__list__item__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__wrap__inner">
+                    <div class="footer__wrap__inner__contacts">
+                        <ul class="footer__wrap__inner__contacts__list">
+                            <li class="footer__wrap__inner__contacts__list__item"><a href="mailto:djamstroy@mail.ru" class="footer__wrap__inner__contacts__list__item__link">djamstroy@mail.ru</a></li>
+                            <li class="footer__wrap__inner__contacts__list__item"><a href="tel:+79531574444" class="footer__wrap__inner__contacts__list__item__link">+7 (953) 157-44-44</a></li>
+                        </ul>
+                        <a href="privacy.html" class="footer__wrap__inner__contacts__privacy">Политика конфиденциальности</a>
+                    </div>
+                    <ul class="footer__wrap__inner__media">
+                        <li class="footer__wrap__inner__media__item"><a href="https://wa.me/79531574444" class="footer__wrap__inner__media__item__link" target="_blank">Whatsapp</a></li>
+                        <li class="footer__wrap__inner__media__item"><a href="https://t.me/djamstroy" class="footer__wrap__inner__media__item__link" target="_blank">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__legal">
+                <p class="footer__legal__text">© Все права защищены «Джамстрой»</p>
+                <p class="footer__legal__since">2009 — 2023 </p>
+                <p class="footer__legal__developer">Сайт разработал <a href="https://t.me/zhahongir_web" target="_blank">@zhahongir_web</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Menu -->
+    <div class="menu ">
+        <div class="menu__inner">
+            <a href="index.html" class="menu__inner__logo">
+                <img src="icons/logo.svg" alt="logo" class="menu__inner__logo__icon">
+            </a>
+            <ul class="menu__inner__nav">
+                <li class="menu__inner__nav__item"><a href="index.html#aboutus" class="menu__inner__nav__item__link">О компании</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#advantages" class="menu__inner__nav__item__link">Преимущества</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#services" class="menu__inner__nav__item__link">Услуги</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#repairs" class="menu__inner__nav__item__link">Виды ремонта</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#stages" class="menu__inner__nav__item__link">Этапы работ</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#works" class="menu__inner__nav__item__link">Наши работы</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#reviews" class="menu__inner__nav__item__link">Отзывы</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#contacts" class="menu__inner__nav__item__link">Контакты</a></li>
+            </ul>
+            <button class="menu__inner__btn booking">Обратная связь</button>
+        </div>
+    </div>
+
+
+    <!-- Modal  -->
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <img src="icons/close.svg" alt="close" class="modal__close">
+            <h5 class="modal__title"><span>Оставить</span> заявку</h5>
+            <p class="modal__description">Заполните форму и наш специалист позвонит <br> в течение нескольких минут для уточнения деталей!</p>
+            <form action="#" class="modal__form form" autocomplete="off" method="POST" id="formModal">
+                <div class="modal__form__inner">
+                    <label for="nameModal">Ваше имя:</label>
+                    <input type="name" placeholder="Иван" autocomplete="off" class="modal__form__inner__item" name="name" id="nameModal">
+                </div>
+                
+                <div class="modal__form__inner">
+                    <label for="emailModal">Ваш e-mail:</label>
+                    <input type="email" placeholder="ivan@mail.ru" autocomplete="off" name="email" class="modal__form__inner__item" id="emailModal">
+                </div>
+                
+                <div class="modal__form__inner">
+                    <label for="phoneModal">Номер телефона:</label>
+                    <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" autocomplete="off" class="phoneMask modal__form__inner__item" id="phoneModal">
+                </div>
+
+                <div class="modal__form__check">
+                    <input class="modal__form__check__checkbox" disabled checked="checked" type="checkbox" id="privacyModal" name="privacy">
+
+                    <label class="modal__form__check__label" for="privacyModal">
+                        <p class="modal__form__check__label__text">Нажимая кнопку «Отправить заявку», вы подтверждайте, что ознакомились c <a href="privacy.html" target="_blank">политикой конфиденциальности</a> и принимайте их.</p>
+                    </label>
+                </div>
+                        
+                <button type="submit" class="modal__form__btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/sliders.js"></script>
+
+    <script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 114) {
+        $("header").addClass("animate-header");
+            } else {
+        $("header").removeClass("animate-header");
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1D1B1A;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+div, a, button, span, p {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slider-btns {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    &-item {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 100%;
+        border: 1px solid #FE831E;
+        cursor: pointer;
+        transition: 0.5s ease;
+        &:hover {
+            background-color: #FE831E;
+        }
+        img {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            width: 8px;
+            height: 15px;
+        }
+    }
+}
+
+
+// Blocks
+@import '../scss/fonts';
+@import '../scss/mixins';
+
+@import '../scss/blocks/header';
+@import '../scss/blocks/promo';
+@import '../scss/blocks/about';
+@import '../scss/blocks/advantages';
+@import '../scss/blocks/services';
+@import '../scss/blocks/jobs';
+@import '../scss/blocks/stages';
+@import '../scss/blocks/works';
+@import '../scss/blocks/reviews';
+@import '../scss/blocks/contacts';
+@import '../scss/blocks/footer';
+
+@import '../scss/blocks/modals';
+
+@import '../scss/blocks/intro';
+@import '../scss/blocks/table';
+
+// Responsive
+@import '../scss/responsive/1199px';
+@import '../scss/responsive/991px';
+@import '../scss/responsive/767px';
+@import '../scss/responsive/575px';

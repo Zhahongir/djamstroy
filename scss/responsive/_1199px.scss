@@ -1,0 +1,122 @@
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+
+    .header__wrap__content__nav {
+        display: none;
+    }
+
+    .header__wrap__content__hamburger {
+        display: flex;
+    }
+
+    .about__wrap {
+        flex-direction: column;
+    }
+
+    .about__wrap__content {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .advantages__wrap {
+        grid-template: 1fr / 480px 480px;
+    }
+
+    .services__wrap {
+        padding-left: calc((100% - 960px) / 2);
+        margin-right: 30px;
+    }
+
+    .jobs__wrap__item__head__number {
+        margin-right: 30px;
+    }
+
+    .jobs__wrap__item__head__title {
+        width: 280px;
+    }
+
+    .stages__wrap {
+        grid-template: 1fr / 450px 450px;
+    }
+
+    .stages__wrap__item {
+        width: 450px;
+    }
+
+    .works__wrap {
+        padding-left: calc((100% - 960px) / 2);
+        margin-right: 30px;
+    }
+
+    .reviews__wrap__inner__slide {
+        width: 470px !important;
+    }
+
+    .reviews__wrap__inner {
+        height: max-content !important;
+    }
+
+    iframe {
+        width: 520px;
+    }
+
+    .footer__wrap__nav__logo {
+        margin-right: 45px;
+    }
+
+    .footer__wrap__nav__list-first {
+        margin-right: 50px; 
+    }
+
+    .intro__wrap__content {
+        width: 580px;
+    }
+
+    .intro__wrap__photo {
+        position: sticky;
+        top: 0;
+    }
+
+    .intro__wrap__content__callback {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .intro__wrap__content__callback__note {
+        width: 330px;
+    }
+
+    .intro__wrap__content__callback__btn {
+        margin-right: 0;
+    }
+
+    .table__wrap .tab__wrap .tabheader .tabheader__item {
+        font-size: 16px;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__header__name {
+        width: 395px;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__item__title {
+        width: 395px;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__header__info__material {
+        font-size: 16px;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__header__info__not-material {
+        font-size: 16px;
+    }
+
+    .table__full__inner__header__name {
+        width: 635px;
+    }
+
+    .table__full__inner__item__title {
+        width: 635px;
+    }
+}

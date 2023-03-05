@@ -1,0 +1,36 @@
+.reviews {
+    padding-top: 120px;
+    position: relative;
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+            @include title;
+        }
+    }
+    &__wrap {
+        position: relative;
+        overflow: hidden;
+        margin-top: 30px;
+        &__inner {
+            &__slide {
+                width: 580px !important;
+                margin-bottom: 10px;
+                position: relative;
+                padding: 30px 25px;
+                border: 1px solid #828282;
+                border-radius: 10px;
+                &__text {
+                    font-size: 17px;
+                    color: #fff;
+                    margin-bottom: 30px;
+                }
+                &__author {
+                    font-size: 16px;
+                    color: #E0E0E0;
+                }
+            }
+        }
+    }
+}

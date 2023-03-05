@@ -1,0 +1,28 @@
+@mixin dark {
+    color: #1D1B1A;
+}
+
+@mixin dark-bg {
+    background-color: #1D1B1A;
+}
+
+@mixin orange {
+    color: #FE831E;
+}
+
+@mixin orange-bg {
+    background-color: #FE831E;
+}
+
+@mixin title {
+    font-size: 45px;
+    font-family: 'Buyan';
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    span {
+        font-family: 'Buyan';
+        font-weight: 400;
+        color: #FE831E;
+    }
+}

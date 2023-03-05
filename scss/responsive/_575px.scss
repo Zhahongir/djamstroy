@@ -1,0 +1,519 @@
+@media screen and (max-width: 575px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+    }
+
+    .header__wrap__logo {
+        width: 70px;
+        height: 57px;
+    }
+
+    .header__wrap__content__callback {
+        display: none;
+    }
+
+    .header__wrap__content__phone {
+        margin-right: 0;
+    }
+
+    .header__wrap__content__hamburger {
+        margin-left: 30px;
+    }
+
+    .promo {
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.9) 18.72%, rgba(0,0,0,0.381) 100%),url(../images/promo.webp);
+    }
+
+    .promo__wrap {
+        padding-top: 180px;
+    }
+
+    .promo__wrap__title {
+        font-size: 37px;
+    }
+
+    .promo__wrap__description {
+        font-size: 16px;
+    }
+
+    .promo__wrap__btns {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+        margin-top: 30px;
+    }
+
+    .promo__wrap__btns__services {
+        margin-right: 0;
+        font-size: 15px;
+        padding: 18px 32px;
+        margin-top: 0px;
+    }
+
+    .promo__wrap__btns__callback {
+        margin-top: 30px;
+    }
+
+    .promo__wrap__btns__callback__text {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .promo__wrap__btns__callback__icon {
+        height: 12px;
+        width: auto;
+    }
+
+    .title {
+        font-size: 33px;
+        transform: translateY(2px);
+    }
+
+    .about {
+        padding-top: 70px;
+    }
+
+    .about__wrap__content__title {
+        font-size: 22px;
+    }
+
+    .about__wrap__content__facts__item {
+        padding: 25px 20px 20px 20px !important;
+    }
+
+    .about__wrap__content__facts__item:nth-child(1) {
+        width: 100%;
+    }
+
+    .about__wrap__content__facts__item:nth-child(2) {
+        width: 100%;
+    }
+
+    .about__wrap__content__facts__item:nth-child(3) {
+        width: 100%;
+    }
+
+    .about__wrap__content__facts__item__numbers {
+        font-size: 45px;
+    }
+
+    .advantages {
+        padding-top: 100px;
+    }
+
+    .advantages__wrap__item {
+        width: 100%;
+    }
+
+    .advantages__wrap {
+        grid-template: 1fr / 100%;
+    }
+
+    .advantages__wrap__item__title {
+        font-size: 19px;
+    }
+
+    .slider-btns-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .services {
+        padding-top: 100px;
+    }
+
+    .services__wrap {
+        padding-left: 15px;
+        margin-right: 20px;
+    }
+
+    .services__wrap__inner__slide {
+        width: 320px !important;
+        height: 356px !important;
+    }
+
+    .services__wrap__inner__slide__item {
+        width: 320px;
+        height: 356px;
+        padding: 30px 20px 30px 20px;
+    }
+
+    .services__wrap__inner__slide__item__title {
+        font-size: 20px;
+    }
+
+    .services__wrap__inner__slide__item__btn__text {
+        font-size: 15px;
+    }
+
+    .jobs {
+        padding-top: 100px;
+    }
+
+    .jobs__wrap__item__head__title {
+        font-size: 17px;
+    }
+
+    .jobs__wrap__item__head__number {
+        margin-right: 20px;
+        font-size: 32px;
+    }
+
+    .jobs__wrap__item__content__text {
+        font-size: 15px;
+    }
+
+    .jobs__btn {
+        font-size: 15px;
+        padding: 18px 32px;
+    }
+
+    .stages {
+        padding-top: 100px;
+    }
+
+    .stages__wrap {
+        grid-template: 1fr / 100%;
+    }
+
+    .stages__wrap__item {
+        width: 100%;
+    }
+
+    .stages__wrap__item__title {
+        font-size: 27px;
+    }
+
+    .stages__wrap__item__description {
+        font-size: 16px;
+    }
+
+    .works {
+        padding-top: 100px;
+    }
+
+    .works__wrap {
+        padding-left: 15px;
+    }
+
+    .works__wrap__inner__slide__info__price {
+        font-size: 16px;
+    }
+
+    .works__wrap__inner__slide__info__type {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .works__wrap__inner__slide {
+        width: 320px !important;
+    }
+
+    .works__wrap__inner__slide__header {
+        height: 219px;
+    }
+
+    .contacts {
+        padding-top: 80px;
+    }
+
+    .contacts__wrap__content__item__title {
+        font-size: 20px;
+    }
+
+    .contacts__wrap__content__item__link {
+        font-size: 18px;
+    }
+
+    .contacts__wrap__content__inner__item__title {
+        font-size: 20px;
+    }
+
+    .contacts__wrap__content__inner__item__link {
+        font-size: 19px;
+    }
+
+    .contacts__wrap__content__media__item__link {
+        font-size: 19px;
+    }
+
+    .contacts__wrap__content__inner {
+        flex-direction: column;
+        margin-top: 40px;
+        row-gap: 40px;
+    }
+
+    .contacts__wrap__content__media__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contacts__wrap__content__media__item {
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    .footer__wrap__nav__list-first {
+        margin-top: 30px;
+    }
+
+    .footer__wrap__nav__list-first__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .footer__wrap__nav__list__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        width: 75%;
+        padding-top: 20px;
+    }
+
+    .menu__inner__nav__item__link {
+        font-size: 16px;
+    }
+
+    .menu__inner__nav__item {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .menu__inner {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .menu__inner__logo__icon {
+        width: 80px;
+        height: 65px;
+    }
+
+    .menu__inner__btn {
+        font-size: 14px;
+    }
+
+    .overlay .modal {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+        padding: 45px 15px 40px 15px;
+    }
+
+    .overlay .modal__title {
+        font-size: 33px;
+    }
+
+    .overlay .modal__close {
+        width: 22px;
+        height: 22px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .overlay .modal__description {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .overlay .modal__form__inner__item {
+        padding: 13px 18px;
+    }
+
+    .overlay .modal__form__btn {
+        font-size: 15px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .intro {
+        padding-top: 120px;
+    }
+
+    .intro__wrap__photo {
+        height: 320px;
+    }
+
+    .intro__wrap__content__callback__btn {
+        font-size: 14px;
+        padding: 18px 32px;
+    }
+
+    .table__title {
+        font-size: 28px !important;
+    }
+
+    .table__wrap {
+        margin-top: 25px;
+    }
+
+    .table__wrap .tab__wrap .tabheader .tabheader__item {
+        font-size: 15px;
+        padding: 15px 18px;
+    }
+
+    .tabheader__items {
+        padding-bottom: 10px;
+    }
+
+    .table__wrap .tab__wrap .tabcontent {
+        margin-top: 15px;
+    }
+
+    .header-square-iskl {
+        flex-direction: column;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__header__info {
+        display: none;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__header__name {
+        width: 100%;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__item {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__item__title {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .tabcontent__inner__item__material-title {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .tabcontent__inner__item__material-info {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 15px;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__item__info {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 15px;
+    }
+
+    .tabcontent__inner__item__material-info__unit {
+        width: 100%;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__item__info__unit {
+        width: 100%;
+    }
+
+    .tabcontent__inner__item__material-info__price {
+        width: 100%;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__item__info__price {
+        width: 100%;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .table__callback {
+        margin-top: 35px;
+    }
+
+    .table__callback__btn {
+        font-size: 14px;
+        padding: 18px 32px;
+        margin-right: 0;
+    }
+
+    .table__callback__note {
+        width: 100%;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__item__subtitle {
+        font-weight: 500;
+        @include orange;
+    }
+
+    .header-square-info {
+        display: flex !important;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 15px;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__header__info__material {
+        font-size: 14px;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__header__info__not-material {
+        font-size: 14px;
+    }
+
+    .table__wrap .tab__wrap .tabcontent__inner__header__title {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .intro__wrap__content__info__item .intro__info-br {
+        display: block;
+    }
+
+    .table__full__inner__header__info {
+        display: none;
+    }
+
+    .table__full__inner__header__name {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .table__full__inner__item {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .table__full__inner__item__title {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .table__full__inner__item__info {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 15px;
+    }
+
+    .table__full__inner__item__info__unit {
+        width: 100%;
+    }
+
+    .table__full__inner__item__info__price {
+        width: 100%;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+}

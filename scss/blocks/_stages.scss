@@ -1,0 +1,46 @@
+.stages {
+    position: relative;
+    padding-top: 120px;
+    &__title {
+        @include title;
+    }
+    &__wrap {
+        margin-top: 50px;
+        display: grid;
+        grid-template: 1fr / 360px 360px 360px;
+        justify-content: space-between;
+        align-items: baseline;
+        row-gap: 75px;
+        &__item {
+            position: relative;
+            width: 360px;
+            &__title {
+                font-size: 32px;
+                font-weight: 500;
+                font-family: 'Buyan';
+                color: #fff;
+                span {
+                    font-weight: 700;
+                    font-family: 'Buyan';
+                    @include orange;
+                }
+            }
+            &__description {
+                font-size: 18px;
+                font-weight: 400;
+                color: #E0E0E0;
+                margin-top: 15px;
+                a {
+                    @include orange;
+                    font-weight: 500;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    transition: 0.5s ease;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

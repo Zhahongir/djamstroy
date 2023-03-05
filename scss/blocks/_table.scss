@@ -1,0 +1,310 @@
+.table {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    &__title {
+        @include title;
+    }
+    &__full {
+        margin-top: 30px;
+        width: 100%;
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border: 1px solid #E0E0E0;
+            border-radius: 10px;
+            &__header {
+                padding: 18px 30px 18px 30px;
+                display: flex;
+                align-items: center;
+                &__name {
+                    width: 860px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #fff;
+                    margin-right: 40px;
+                }
+                &__info {
+                    display: flex;
+                    align-items: center;
+                    &__unit {
+                        width: 80px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #fff;
+                        margin-right: 40px;
+                    }
+                    &__price {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #fff;
+                        width: 100px;
+                    }
+                }
+            }
+            &__item {
+                padding: 18px 30px 18px 30px;
+                display: flex;
+                align-items: center;
+                border-top: 1px solid #E0E0E0;
+                &__title {
+                    width: 860px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #fff;
+                    margin-right: 40px;
+                    span {
+                        @include orange;
+                        font-weight: 500;
+                    }
+                }
+                &__info {
+                    display: flex;
+                    align-items: center;
+                    &__unit {
+                        width: 80px;
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: #fff;
+                        margin-right: 40px;
+                    }
+                    &__price {
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: #fff;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    &__wrap {
+        margin-top: 30px;
+        .tab__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .tabheader {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                .tabheader__item {
+                    padding: 18px 18px;
+                    border: 1px solid #E0E0E0;
+                    border-radius: 10px 0px 0px 10px;
+                    font-size: 18px;
+                    color: #E0E0E0;
+                    font-weight: 400;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+                    transform: translateX(1px);
+                    &:hover {
+                        color: #fff;
+                        border: 1px solid #FE831E;
+                    }
+                    &:not(:last-child) {
+                        transform: translateY(1px);
+                    }
+                }
+                .tabheader__item_active {
+                    @include orange-bg;
+                    color: #fff;
+                    border: 1px solid #FE831E;
+                }
+            }
+            .tabcontent {
+                width: 75%;
+                border: 1px solid #E0E0E0;
+                border-radius: 0px 10px 10px 0px;
+                transform: translateY(1px);
+                &__inner {
+                    position: relative;
+                    &__header {
+                        padding: 18px 30px 18px 30px;
+                        display: flex;
+                        align-items: center;
+                        &__title {
+                            width: 50%;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #fff;
+                            margin-right: 40px;
+                        }
+                        &__name {
+                            width: 590px;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #fff;
+                            margin-right: 40px;
+                        }
+                        &__info {
+                            display: flex;
+                            align-items: center;
+                            &__unit {
+                                width: 80px;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #fff;
+                                margin-right: 40px;
+                            }
+                            &__price {
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #fff;
+                                width: 100px;
+                            }
+                            &__material {
+                                width: 48%;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #fff;
+                                margin-right: 4%;
+                            }
+                            &__not-material {
+                                width: 48%;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #fff;
+                                margin-right: 2%;
+                            }
+                        }
+                    }
+                    &__item {
+                        padding: 18px 30px 18px 30px;
+                        display: flex;
+                        align-items: center;
+                        border-top: 1px solid #E0E0E0;
+                        &__subtitle {
+                            text-align: center;
+                            margin: 0 auto;
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: #fff;
+                        }
+                        &__title {
+                            width: 590px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #fff;
+                            margin-right: 40px;
+                            span {
+                                @include orange;
+                                font-weight: 500;
+                            }
+                        }
+                        &__info {
+                            display: flex;
+                            align-items: center;
+                            &__unit {
+                                width: 80px;
+                                font-size: 17px;
+                                font-weight: 400;
+                                color: #fff;
+                                margin-right: 40px;
+                            }
+                            &__price {
+                                font-size: 17px;
+                                font-weight: 400;
+                                color: #fff;
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__callback {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        justify-content: center;
+        flex-direction: column;
+        &__btn {
+            @include orange-bg;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            border-radius: 10px;
+            border: none;
+            transition: 0.3s ease;
+            padding: 20px 32px;
+            cursor: pointer;
+            text-transform: uppercase;
+            &:hover {
+                background-color: #FF7B0E;
+                box-shadow: 0px 0px 20px rgba(254, 131, 30, 0.35);
+            }
+        }
+        &__note {
+            font-size: 14px;
+            width: 500px;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 400;
+            color: #E0E0E0;
+            span {
+                @include orange;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from{opacity: 0.1;}
+    to{opacity: 1;}
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.header-square {
+    border-top: 1px solid #E0E0E0;
+}
+
+.header-square-info {
+    width: 48%;
+}
+
+.tabcontent__inner__item__material-title {
+    width: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-right: 40px;
+    span {
+        @include orange;
+        font-weight: 500;
+    }
+}
+.tabcontent__inner__item__material-info {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    &__unit {
+        width: 48%;
+        font-size: 17px;
+        font-weight: 400;
+        color: #fff;
+        margin-right: 4%;
+    }
+    &__price {
+        font-size: 17px;
+        font-weight: 400;
+        color: #fff;
+        width: 48%;
+    }
+}

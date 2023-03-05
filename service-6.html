@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Джамстрой</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="/" class="header__wrap__logo"></a>
+                <div class="header__wrap__content">
+                    <ul class="header__wrap__content__nav">
+                        <li class="header__wrap__content__nav__item"><a href="index.html#aboutus" class="header__wrap__content__nav__item__link">О компании</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#services" class="header__wrap__content__nav__item__link">Услуги</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#repairs" class="header__wrap__content__nav__item__link">Виды ремонта</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#stages" class="header__wrap__content__nav__item__link">Этапы работ</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#works" class="header__wrap__content__nav__item__link">Наши работы</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#reviews" class="header__wrap__content__nav__item__link">Отзывы</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="index.html#contacts" class="header__wrap__content__nav__item__link">Контакты</a></li>
+                    </ul>
+                    <a href="tel:+79531574444" class="header__wrap__content__phone">
+                        <img src="icons/call.svg" alt="phone" class="header__wrap__content__phone__icon">
+                    </a>
+                    <div class="header__wrap__content__callback booking">Обратная связь</div>
+                    <div class="header__wrap__content__hamburger">
+                        <span class="header__wrap__content__hamburger__span"></span>
+                        <span class="header__wrap__content__hamburger__span"></span>
+                        <span class="header__wrap__content__hamburger__span"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro__wrap">
+                <img src="images/service-promo-6.webp" alt="image" class="intro__wrap__photo">
+                <div class="intro__wrap__content">
+                    <h1 class="intro__wrap__content__title">Ремонт парадных (подъездов)</h1>
+                    <p class="intro__wrap__content__description">Компания «Джамстрой» выполняет ремонты парадных в СПб на выгодных для жильцов условиях. Сотрудники нашей компании выполняют все виды ремонта подъездов, по приемлемым, достаточно дешёвым ценам, на достойном качественном уровне.</p>
+                    <p class="intro__wrap__content__description">В ходе ремонта подъездов выполняются все виды работ, необходимых для восстановления первоначального технического состояния лестничных клеток и пролётов, а также последующей отделки в соответствии с условиями договора. Долговременное сотрудничество с компаниями, осуществляющими оптовую торговлю стройматериалами, позволяет нам закупать необходимые материалы по минимальной стоимости.</p>
+                    <p class="intro__wrap__content__description">На размер конечной суммы, которую необходимо внести за выполнение ремонта, напрямую влияют:</p>
+                    <ul class="intro__wrap__content__list">
+                        <li class="intro__wrap__content__list__item"><span>•</span> площадь подлежащих ремонту стен, потолков, пола, лестничных ступеней;</li>
+                        <li class="intro__wrap__content__list__item"><span>•</span> этажность здания; </li>
+                        <li class="intro__wrap__content__list__item"><span>•</span> стоимость и количество используемых материалов;</li>
+                        <li class="intro__wrap__content__list__item"><span>•</span> виды и сложность выполняемых работ.</li>
+                    </ul>
+                    <p class="intro__wrap__content__description">Проконсультируйтесь с нашим специалистом, какую отделку лучше выбрать для вашей парадной в рамках запланированного бюджета. Опытный мастер поможет выбрать оптимальную конфигурацию ремонта и сэкономить на закупке отделочных материалов.</p>
+                    <div class="intro__wrap__content__callback">
+                        <button class="intro__wrap__content__callback__btn booking">Оставить заявку</button>
+                        <p class="intro__wrap__content__callback__note">Для точной оценки предстоящего ремонта вы можете вызвать мастера для составления подробной сметы <span>(бесплатно)</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="table">
+        <div class="container">
+            <h2 class="table__title title"><span>Стоимость</span> ремонта и отделки парадных</h2>
+            <div class="table__full">
+                <div class="table__full__inner">
+                    <div class="table__full__inner__header">
+                        <div class="table__full__inner__header__name">Наименование работ</div>
+                        <div class="table__full__inner__header__info">
+                            <div class="table__full__inner__header__info__unit">Ед. изм.</div>
+                            <div class="table__full__inner__header__info__price">Цена</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Демонтаж отделочных материалов</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 100 ₽</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Штробление стен, укладка новой электропроводки</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 200 ₽</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Оштукатуривание стен и&nbsp;потолков</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 320 ₽</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Сплошная либо частичная шпаклёвка поверхностей</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 200 ₽</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Покраска радиаторов, элементов мусоропровода, окон, дверей</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 100 ₽</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Побелка или покраска потолка</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 150 ₽</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Покраска стен</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 100 ₽</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Монтаж лепных элементов и&nbsp;другого декора</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 150 ₽</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Укладка плитки</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 850 ₽</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Укладка керамогранита</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 950 ₽</div>
+                        </div>
+                    </div>
+                    <div class="table__full__inner__item">
+                        <div class="table__full__inner__item__title">Монтаж осветительных приборов</div>
+                        <div class="table__full__inner__item__info">
+                            <div class="table__full__inner__item__info__unit">м²</div>
+                            <div class="table__full__inner__item__info__price">от 200 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table__callback booking">
+                <button class="table__callback__btn">Оставить заявку</button>
+                <p class="table__callback__note">Для точной оценки предстоящего ремонта вы можете вызвать мастера для составления подробной сметы <span>(бесплатно)</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__wrap__nav">
+                    <a href="/" class="footer__wrap__nav__logo"></a>
+                    <ul class="footer__wrap__nav__list-first">
+                        <li class="footer__wrap__nav__list-first__item"><a href="index.html#aboutus" class="footer__wrap__nav__list-first__item__link">О компании</a></li>
+                        <li class="footer__wrap__nav__list-first__item"><a href="index.html#advantages" class="footer__wrap__nav__list-first__item__link">Преимущества</a></li>
+                        <li class="footer__wrap__nav__list-first__item"><a href="index.html#services" class="footer__wrap__nav__list-first__item__link">Услуги</a></li>
+                        <li class="footer__wrap__nav__list-first__item"><a href="index.html#repairs" class="footer__wrap__nav__list-first__item__link">Виды работ</a></li>
+                    </ul>
+                    <ul class="footer__wrap__nav__list">
+                        <li class="footer__wrap__nav__list__item"><a href="index.html#stages" class="footer__wrap__nav__list__item__link">Этапы работ</a></li>
+                        <li class="footer__wrap__nav__list__item"><a href="index.html#works" class="footer__wrap__nav__list__item__link">Наши работы</a></li>
+                        <li class="footer__wrap__nav__list__item"><a href="index.html#reviews" class="footer__wrap__nav__list__item__link">Отзывы</a></li>
+                        <li class="footer__wrap__nav__list__item"><a href="index.html#contacts" class="footer__wrap__nav__list__item__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__wrap__inner">
+                    <div class="footer__wrap__inner__contacts">
+                        <ul class="footer__wrap__inner__contacts__list">
+                            <li class="footer__wrap__inner__contacts__list__item"><a href="mailto:djamstroy@mail.ru" class="footer__wrap__inner__contacts__list__item__link">djamstroy@mail.ru</a></li>
+                            <li class="footer__wrap__inner__contacts__list__item"><a href="tel:+79531574444" class="footer__wrap__inner__contacts__list__item__link">+7 (953) 157-44-44</a></li>
+                        </ul>
+                        <a href="privacy.html" class="footer__wrap__inner__contacts__privacy">Политика конфиденциальности</a>
+                    </div>
+                    <ul class="footer__wrap__inner__media">
+                        <li class="footer__wrap__inner__media__item"><a href="https://wa.me/79531574444" class="footer__wrap__inner__media__item__link" target="_blank">Whatsapp</a></li>
+                        <li class="footer__wrap__inner__media__item"><a href="https://t.me/djamstroy" class="footer__wrap__inner__media__item__link" target="_blank">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__legal">
+                <p class="footer__legal__text">© Все права защищены «Джамстрой»</p>
+                <p class="footer__legal__since">2009 — 2023 </p>
+                <p class="footer__legal__developer">Сайт разработал <a href="https://t.me/zhahongir_web" target="_blank">@zhahongir_web</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Menu -->
+    <div class="menu ">
+        <div class="menu__inner">
+            <a href="index.html" class="menu__inner__logo">
+                <img src="icons/logo.svg" alt="logo" class="menu__inner__logo__icon">
+            </a>
+            <ul class="menu__inner__nav">
+                <li class="menu__inner__nav__item"><a href="index.html#aboutus" class="menu__inner__nav__item__link">О компании</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#advantages" class="menu__inner__nav__item__link">Преимущества</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#services" class="menu__inner__nav__item__link">Услуги</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#repairs" class="menu__inner__nav__item__link">Виды ремонта</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#stages" class="menu__inner__nav__item__link">Этапы работ</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#works" class="menu__inner__nav__item__link">Наши работы</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#reviews" class="menu__inner__nav__item__link">Отзывы</a></li>
+                <li class="menu__inner__nav__item"><a href="index.html#contacts" class="menu__inner__nav__item__link">Контакты</a></li>
+            </ul>
+            <button class="menu__inner__btn booking">Обратная связь</button>
+        </div>
+    </div>
+
+    <!-- Modal  -->
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <img src="icons/close.svg" alt="close" class="modal__close">
+            <h5 class="modal__title"><span>Оставить</span> заявку</h5>
+            <p class="modal__description">Заполните форму и наш специалист позвонит <br> в течение нескольких минут для уточнения деталей!</p>
+            <form action="#" class="modal__form form" autocomplete="off" method="POST" id="formModal">
+                <div class="modal__form__inner">
+                    <label for="nameModal">Ваше имя:</label>
+                    <input type="name" placeholder="Иван" autocomplete="off" class="modal__form__inner__item" name="name" id="nameModal">
+                </div>
+                
+                <div class="modal__form__inner">
+                    <label for="emailModal">Ваш e-mail:</label>
+                    <input type="email" placeholder="ivan@mail.ru" autocomplete="off" name="email" class="modal__form__inner__item" id="emailModal">
+                </div>
+                
+                <div class="modal__form__inner">
+                    <label for="phoneModal">Номер телефона:</label>
+                    <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" autocomplete="off" class="phoneMask modal__form__inner__item" id="phoneModal">
+                </div>
+
+                <div class="modal__form__check">
+                    <input class="modal__form__check__checkbox" disabled checked="checked" type="checkbox" id="privacyModal" name="privacy">
+
+                    <label class="modal__form__check__label" for="privacyModal">
+                        <p class="modal__form__check__label__text">Нажимая кнопку «Отправить заявку», вы подтверждайте, что ознакомились c <a href="privacy.html" target="_blank">политикой конфиденциальности</a> и принимайте их.</p>
+                    </label>
+                </div>
+                        
+                <button type="submit" class="modal__form__btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/sliders.js"></script>
+
+    <script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 114) {
+        $("header").addClass("animate-header");
+            } else {
+        $("header").removeClass("animate-header");
+        }
+    });
+    </script>
+</body>
+</html>

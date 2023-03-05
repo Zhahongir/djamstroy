@@ -1,0 +1,162 @@
+.footer {
+    position: relative;
+    background-color: #000;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    &__wrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &__nav {
+            display: flex;
+            align-items: flex-start;
+            &__logo {
+                width: 110px;
+                height: 90px;
+                background: url(../icons/logo.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: 140px;
+                transition: 0.3s ease;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+            &__list-first {
+                position: relative;
+                margin-right: 100px;
+                &__item {
+                    &:not(:last-child) {
+                        margin-bottom: 8px;
+                    }
+                    &__link {
+                        color: #E0E0E0;
+                        font-size: 16px;
+                        font-weight: 400;
+                        transition: 0.3s ease;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            &__list {
+                position: relative;
+                &__item {
+                    &:not(:last-child) {
+                        margin-bottom: 8px;
+                    }
+                    &__link {
+                        color: #E0E0E0;
+                        font-size: 16px;
+                        font-weight: 400;
+                        transition: 0.3s ease;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        &__inner {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            &__contacts {
+                position: relative;
+                margin-right: 85px;
+                &__list {
+                    position: relative;
+                    margin-bottom: 17px;
+                    &__item {
+                        &:first-child {
+                            margin-bottom: 10px;
+                        }
+                        &__link {
+                            font-size: 22px;
+                            color: #fff;
+                            font-weight: 400;
+                            transition: 0.3s ease;
+                            &:hover {
+                                @include orange;
+                            }
+                        }
+                    }
+                }
+                &__privacy {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #E0E0E0;
+                    transition: 0.3s ease;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            &__media {
+                position: relative;
+                align-items: flex-end;
+                display: flex;
+                flex-direction: column;
+                &__item {
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                    &__link {
+                        width: max-content;
+                        display: block;
+                        font-size: 16px;
+                        color: #E0E0E0;
+                        &:hover::after {
+                            width: 0;
+                        }
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 1px;
+                            background-color: #fff;
+                            margin-top: 3px;
+                            transition: 0.9s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__divider {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        height: 1px;
+    }
+    &__legal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__text {
+            font-size: 14px;
+            color: #BDBDBD;
+            font-weight: 400;
+        }
+        &__since {
+            font-size: 14px;
+            color: #BDBDBD;
+            font-weight: 400;
+        }
+        &__developer {
+            font-size: 14px;
+            color: #BDBDBD;
+            font-weight: 400;
+            a {
+                color: #fff;
+                transition: 0.3s ease;
+                &:hover {
+                    @include orange;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,172 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    z-index: 1100;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    .modal {
+        width: 650px;
+        border-radius: 10px;
+        @include dark-bg;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        &__close {
+            position: absolute;
+            font-size: 54px;
+            cursor: pointer;
+            text-align: right;
+            color: #fff;
+            right: 20px;
+            top: 20px;
+            transition: 0.3s all;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        &__title {
+            font-size: 35px;
+            color: #fff;
+            font-family: 'Buyan';
+            font-weight: 400;
+            span {
+                font-family: 'Buyan';
+                font-weight: 400;
+                @include orange;
+            }
+        }
+        &__description {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 15px;
+            color: #E0E0E0;
+        }
+        &__form {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            &__inner {
+                text-align: left;
+                margin-top: 25px;
+                label {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #E0E0E0;
+                }
+                &__item {
+                    width: 100%;
+                    margin-top: 6px;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    border: 1px solid #828282;
+                    padding: 13px 20px;
+                    font-size: 16px;
+                    color: #fff;
+                    font-weight: 400;
+                    &::placeholder {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #828282;
+                    }
+                    &:focus {
+                        outline: 1px solid #E0E0E0;
+                    }
+                }
+            }
+            &__check {
+                display: flex;
+                align-items: flex-start;
+                margin-top: 25px;
+                input[type="checkbox"] {
+                    display: none;
+                }
+                label::before {
+                    content: '';
+                    display: inline-block;
+                    min-width: 20px;
+                    min-height: 20px;
+                    background-color: #EDEDED;
+                    vertical-align: middle;
+                    padding-left: -60px;
+                    margin-right: 10px;
+                    transition: 0.3s ease;
+                    border-radius: 2px;
+                }
+                input[type="checkbox"]:checked + label::before {
+                    content: '';
+                    min-width: 20px;
+                    min-height: 20px;
+                    background-image: url(../icons/checkbox.svg);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    border-radius: 2px;
+                }
+                &__checkbox {
+                    min-width: 20px;
+                    min-height: 20px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    &:checked {
+                        outline: 1px solid rgba(255, 255, 255, 0.347);
+                    }
+                    &:disabled {
+                        background-color: #fff !important;
+                        color: #000 !important;
+                    }
+                }
+                &__label {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #E0E0E0;
+                    text-align: left;
+                    display: flex;
+                    align-items: flex-start;
+                    cursor: pointer;
+                    a {
+                        @include orange;
+                        font-weight: 500;
+                        transition: 0.3s ease;
+                        &:hover {
+                            opacity: 0.9;
+                        }
+                    }
+                }
+            }
+            &__btn {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                @include orange-bg;
+                text-transform: uppercase;
+                width: 100%;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
+                cursor: pointer;
+                border-radius: 10px;
+                margin-top: 30px;
+                border: none;
+                transition: 0.3s ease;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}

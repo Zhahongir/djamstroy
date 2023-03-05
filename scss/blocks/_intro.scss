@@ -1,0 +1,103 @@
+.intro {
+    padding-top: 180px;
+    position: relative;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &__photo {
+            width: 352px;
+            height: 470px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        &__content {
+            width: 750px;
+            position: relative;
+            &__title {
+                font-size: 24px;
+                font-weight: 500;
+                color: #fff;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            &__description {
+                margin-top: 15px;
+                color: #E0E0E0;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            &__list {
+                margin-top: 10px;
+                position: relative;
+                &__item {
+                    color: #E0E0E0;
+                    font-size: 16px;
+                    font-weight: 400;
+                    &:not(:first-child) {
+                        margin-top: 10px;
+                    }
+                    span {
+                        @include orange;
+                    }
+                }
+            }
+            &__info {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                margin-top: 35px;
+                &__item {
+                    font-size: 18px;
+                    font-weight: 500;
+                    @include orange;
+                    text-transform: uppercase;
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                    span {
+                        font-weight: 500;
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                    .intro__info-br {
+                        display: none;
+                    }
+                }
+            }
+            &__callback {
+                display: flex;
+                align-items: center;
+                margin-top: 40px;
+                &__btn {
+                    @include orange-bg;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-align: center;
+                    border-radius: 10px;
+                    border: none;
+                    transition: 0.3s ease;
+                    padding: 20px 32px;
+                    margin-right: 30px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color: #FF7B0E;
+                        box-shadow: 0px 0px 20px rgba(254, 131, 30, 0.35);
+                    }
+                }
+                &__note {
+                    font-size: 14px;
+                    width: 500px;
+                    font-weight: 400;
+                    color: #E0E0E0;
+                    span {
+                        @include orange;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
